@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/loadKML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readKML"
+        android:text="Load Cameras data" >
+    </Button>
+
+    <Button
+        android:id="@+id/loadJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readJSON"
+        android:text="Load Parks data" >
+    </Button>
+
+    <Button
+        android:id="@+id/loadIMAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readIMAGE"
+        android:text="Load Image" >
+    </Button>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/HTTPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/HTTPImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
